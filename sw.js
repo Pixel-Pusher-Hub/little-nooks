@@ -1,9 +1,9 @@
 /* Tiny Terrains service worker: precache the whole game, then serve cache-first so it plays offline.
    The build fills in the version, the asset list and the hashed entry script. */
-const VERSION = 'mvajctjs';
+const VERSION = 'mvaryjy4';
 const CACHE = `little-nook-${VERSION}`;
-const PRECACHE = ["./","assets/outfit-latin-400-normal-BGsTXAXT.woff2","assets/outfit-latin-500-normal-DKnIMDSk.woff2","assets/outfit-latin-600-normal-B7SfZ07L.woff2","assets/outfit-latin-300-normal-CRYTwY6m.woff2","assets/index-CkHgHf78.css","assets/index-Dwgj4SKU.js","manifest.webmanifest","icons/icon.svg","icons/icon-180.png","icons/icon-192.png","icons/icon-512.png"];
-const ENTRY = 'assets/index-Dwgj4SKU.js';
+const PRECACHE = ["./","assets/outfit-latin-300-normal-CRYTwY6m.woff2","assets/outfit-latin-400-normal-BGsTXAXT.woff2","assets/outfit-latin-500-normal-DKnIMDSk.woff2","assets/outfit-latin-600-normal-B7SfZ07L.woff2","assets/index-DzhxD-xQ.css","assets/index-Cx6wvDg9.js","manifest.webmanifest","icons/icon.svg","icons/icon-180.png","icons/icon-192.png","icons/icon-512.png"];
+const ENTRY = 'assets/index-Cx6wvDg9.js';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
