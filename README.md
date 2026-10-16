@@ -1,4 +1,4 @@
-# Little Nook
+# Tiny Terrains
 
 **Merge · Plan · Score**: a cozy low-poly 3D merge puzzle for phones, tablets and desktop browsers.
 

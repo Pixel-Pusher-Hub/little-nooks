@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <meta name="theme-color" content="#1c1843" />
-    <meta name="description" content="Little Nook — a cozy low-poly 3D merge puzzle. Merge · Plan · Score." />
+    <meta name="description" content="Tiny Terrains — a cozy low-poly 3D merge puzzle. Merge · Plan · Score." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Little Nook" />
-    <title>Little Nook</title>
+    <meta name="apple-mobile-web-app-title" content="Tiny Terrains" />
+    <title>Tiny Terrains</title>
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icons/icon-180.png" />
@@ -65,8 +65,8 @@
         document.addEventListener('click', function (e) { if (e.target && e.target.id === 'bootReload') location.reload(); });
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-DA87EMuH.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BCSi4V7O.css">
+    <script type="module" crossorigin src="./assets/index-CWImbnHf.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CkHIFQ9n.css">
   </head>
   <body class="booting">
     <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -89,6 +89,11 @@
         <symbol id="i-turn-right" viewBox="0 0 24 24"><path d="M15.4 7.6A7.2 7.2 0 1 0 18.8 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M19.5 4.8v4.8h-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
         <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9.7 9.5a2.4 2.4 0 1 1 3.3 2.2c-.7.3-1 .8-1 1.5v.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16.6" r="1" fill="currentColor"/></symbol>
         <symbol id="i-gear" viewBox="0 0 24 24"><path d="M4 8h9.5M18 8h2M4 16h2.5M11 16h9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="15.8" cy="8" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8.8" cy="16" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+        <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="currentColor"/><circle cx="12" cy="12" r="6.2" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.4"/><path d="M12 8.6v6.8" stroke="#fff" stroke-opacity=".8" stroke-width="1.8" stroke-linecap="round"/></symbol>
+        <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5.5 8.5h13l-1 11.2a1.6 1.6 0 0 1-1.6 1.5H8.1a1.6 1.6 0 0 1-1.6-1.5L5.5 8.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10.5V7a3 3 0 0 1 6 0v3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+        <symbol id="i-reroll" viewBox="0 0 24 24"><path d="M19 8.5A7.5 7.5 0 0 0 5.6 7M5 15.5A7.5 7.5 0 0 0 18.4 17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M19.4 4v4.6h-4.6M4.6 20v-4.6h4.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-bulldoze" viewBox="0 0 24 24"><rect x="4" y="9" width="10" height="7" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 11h3.5l2.5 5H14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18.5" r="1.8" fill="currentColor"/><circle cx="16.5" cy="18.5" r="1.8" fill="currentColor"/><path d="M7 9V6h4v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+        <symbol id="i-upgrade" viewBox="0 0 24 24"><path d="M12 19.5V5M6.5 10.5 12 5l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
         <symbol id="i-camera" viewBox="0 0 24 24"><path d="M12 3.5 3.8 8 12 12.5 20.2 8 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m3.8 12.6 8.2 4.5 8.2-4.5M3.8 16.8l8.2 4.5 8.2-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
       </defs>
     </svg>
@@ -99,23 +104,23 @@
       <div class="boot" id="boot" role="status">
         <div class="boot-card">
           <svg class="mark" aria-hidden="true"><use href="#i-flame" /></svg>
-          <span class="logo">Little Nook</span>
+          <span class="logo">Tiny Terrains</span>
           <p class="boot-loading"><span class="boot-dot" aria-hidden="true"></span>Lighting the campfire…</p>
           <p class="boot-slow-note"><span class="boot-dot" aria-hidden="true"></span>Still loading… check your connection</p>
           <p class="boot-error" id="bootError" hidden></p>
           <button class="btn btn-dark boot-reload" id="bootReload" type="button">Reload</button>
           <div class="boot-hint">
             <strong>This viewer can't run the game</strong>
-            <p>File previews (an attachment opened inside the Claude app, Files, Mail or Messages) switch games off. Open Little Nook in Safari or Chrome instead.</p>
+            <p>File previews (an attachment opened inside the Claude app, Files, Mail or Messages) switch games off. Open Tiny Terrains in Safari or Chrome instead.</p>
             <a class="btn btn-primary boot-link" href="https://pixel-pusher-hub.github.io/little-nooks/" target="_blank" rel="noopener">Open the web version</a>
           </div>
           <noscript><p class="boot-noscript">JavaScript is turned off here, so the game can't start.</p></noscript>
-          <small class="boot-build">Web build · v0.7.0 · 2026-10-15 23:19 UTC</small>
+          <small class="boot-build">Web build · v0.8.0 · 2026-10-16 00:38 UTC</small>
         </div>
       </div>
       <div class="webgl-error hidden" id="webglError">
         <strong>3D isn't available here.</strong>
-        <p>Little Nook needs WebGL. Try enabling hardware acceleration or opening the game in a current browser.</p>
+        <p>Tiny Terrains needs WebGL. Try enabling hardware acceleration or opening the game in a current browser.</p>
       </div>
     </div>
 
@@ -127,7 +132,10 @@
         <div class="score-box" role="group" aria-label="Score">
           <span class="sr-only">Score </span><strong id="score">0</strong>
           <span class="sr-only">, personal best <span id="best">0</span></span>
-          <span class="daily-left hidden" id="dailyChip"><b id="dailyLeft">120</b> pieces left</span>
+          <span class="hud-line">
+            <span class="daily-left hidden" id="dailyChip"><b id="dailyLeft">120</b> pieces</span>
+            <span class="coin-chip"><svg aria-hidden="true"><use href="#i-coin" /></svg><b id="coins">0</b><span class="sr-only"> coins</span></span>
+          </span>
         </div>
         <button id="undoBtn" class="round-btn" type="button" aria-label="Undo last move" title="Undo (Z)" disabled>
           <svg><use href="#i-undo" /></svg>
@@ -140,11 +148,20 @@
         <button id="coachSkip" class="coach-skip" type="button">Skip tips</button>
       </div>
 
+      <!-- Choosing a tile for a power (Bulldoze, Upgrade). -->
+      <div class="power-bar hidden" id="powerBar" role="status">
+        <span id="powerText"></span>
+        <button id="powerCancel" type="button">Cancel</button>
+      </div>
+
       <section class="dock" data-inset aria-label="Pieces">
         <p class="status" id="status" aria-live="off"></p>
         <div class="tray">
           <button id="spinLeft" class="round-btn spin-btn" type="button" aria-label="Turn the island left" title="Turn left (Q)">
             <svg><use href="#i-turn-left" /></svg>
+          </button>
+          <button id="shopBtn" class="round-btn shop-btn" type="button" aria-label="Shop" title="Shop (B)">
+            <svg><use href="#i-bag" /></svg>
           </button>
           <button class="bubble keep empty" id="keepBtn" type="button" title="Keep slot (S)">
             <span class="bubble-art"><img id="keepImg" alt="" width="64" height="64" draggable="false" hidden /></span>
@@ -169,14 +186,10 @@
       <div class="home-inner">
         <div class="brand">
           <svg class="mark" aria-hidden="true"><use href="#i-flame" /></svg>
-          <h1 class="logo">Little Nook</h1>
+          <h1 class="logo">Tiny Terrains</h1>
           <p class="tagline">MERGE · PLAN · SCORE</p>
         </div>
         <div class="home-pick">
-          <div class="segmented mode-toggle" role="group" aria-label="Rules">
-            <button id="modeFire" type="button" aria-pressed="true"><svg aria-hidden="true"><use href="#i-flame" /></svg>Firelight</button>
-            <button id="modeClassic" type="button" aria-pressed="false">Classic</button>
-          </div>
           <div class="size-picker" role="group" aria-label="Island size">
             <button id="sizePrev" class="round-btn size-step" type="button" aria-label="Smaller island"><svg><use href="#i-back" /></svg></button>
             <div class="size-info" id="sizeInfo" aria-live="polite">
@@ -186,7 +199,7 @@
             <button id="sizeNext" class="round-btn size-step" type="button" aria-label="Bigger island"><svg class="flip"><use href="#i-back" /></svg></button>
           </div>
         </div>
-        <p class="mode-note" id="modeNote">Build outward from the campfire: you can only build where there is light.</p>
+        <p class="mode-note">Night has fallen. Build outward from the campfire: you can only build where there is light.</p>
         <button id="playBtn" class="btn btn-primary play-btn" type="button">Play</button>
         <button id="homeNewBtn" class="text-btn hidden" type="button">New game</button>
         <div class="home-row">
@@ -206,7 +219,7 @@
     <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="sheet">
         <button id="closeModal" class="close-btn" type="button" aria-label="Close"><svg><use href="#i-close" /></svg></button>
-        <h2 id="modalTitle">Little Nook</h2>
+        <h2 id="modalTitle">Tiny Terrains</h2>
         <div id="modalArt" class="modal-art"></div>
         <div id="modalBody" class="modal-body"></div>
         <div id="modalActions" class="modal-actions"></div>
